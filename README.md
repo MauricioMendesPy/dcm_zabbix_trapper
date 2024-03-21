@@ -15,7 +15,7 @@ No arquivo de configuração do zabbix_server deixe ativado o ***StartTrappers**
 - cada DCM precisa ter um arquivo separado, então caso deseje adionar mais de um DCM na regra de descoberta, copie varias vezes essse arquivo alterando somente o ip do DCM
 
   
-- importe a template para o zabbix, crie seu host e associe a template, não se preocupe com a interface do host, pois a regra de descoberta e os itens são **zabbix trapper*
+- importe a template para o zabbix, crie seu host e associe a template, não se preocupe com a interface do host, pois a regra de descoberta e os itens são **zabbix trapper**
 
   
 - Após criar os arquivos com o nome que preferir, execute a primeira função para criar todos os itens e triggers:
