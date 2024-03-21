@@ -22,10 +22,10 @@ No arquivo de configuração do zabbix_server deixe ativado o ***StartTrappers**
   <blockquote> dcm_values = enviar_valores_zabbix("IP DO DCM",host_dcm,"IP DO ZABBIX") </blockquote>
 
 - e por fim coloque o script unico de cada dcm para ser executado na cron do linux
-<blockquote> crontab -e </blockquote>
-<blockquote> */3 * * * * /usr/bin/python3 /home/scripts/dcm_1.py </blockquote>
+ <blockquote> crontab -e </blockquote>
+ <blockquote> */3 * * * * /usr/bin/python3 /home/scripts/dcm_1.py </blockquote>
 
-** A cada 3 minutos será enviado os valores para os canais **
+ **A cada 3 minutos será enviado os valores para os canais**
 
   
 
