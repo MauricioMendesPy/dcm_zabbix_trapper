@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zabbix_export>
+    <version>6.4</version>
+    <template_groups>
+        <template_group>
+            <uuid>a72fd96586844044953e0d004f8ccc4d</uuid>
+            <name>TEMPLATES SCRIPTS</name>
+        </template_group>
+    </template_groups>
+    <templates>
+        <template>
+            <uuid>c0fe743244f74a8a968fbbe81aaddd9e</uuid>
+            <template>LLD - DCM - PYTHON</template>
+            <name>LLD - DCM - PYTHON</name>
+            <groups>
+                <group>
+                    <name>TEMPLATES SCRIPTS</name>
+                </group>
+            </groups>
+            <discovery_rules>
+                <discovery_rule>
+                    <uuid>f8bb9ffbc2be470bbabe42cfa8a13102</uuid>
+                    <name>PORTA 1 DCM</name>
+                    <type>TRAP</type>
+                    <key>PORTA_1</key>
+                    <delay>0</delay>
+                    <item_prototypes>
+                        <item_prototype>
+                            <uuid>7241243ade1d40b29f3dcfaf142430f8</uuid>
+                            <name>{#SID} - {#CANAL}</name>
+                            <type>TRAP</type>
+                            <key>P1_SID_[{#SID}]</key>
+                            <delay>0</delay>
+                            <description>DESCOBERTA DE PORTA DO DCM VIA TRAPPER</description>
+                            <tags>
+                                <tag>
+                                    <tag>PORTA</tag>
+                                    <value>1</value>
+                                </tag>
+                            </tags>
+                            <trigger_prototypes>
+                                <trigger_prototype>
+                                    <uuid>7f0aee0e3a6044a38393f7935b837783</uuid>
+                                    <expression>avg(/LLD - DCM - PYTHON/P1_SID_[{#SID}],#3)=2</expression>
+                                    <name>{#CANAL} - {#SID} SEM SINAL</name>
+                                    <priority>DISASTER</priority>
+                                    <description>VERIFICAR CANAL {#SID} - {#CANAL} DA PORTA 1</description>
+                                </trigger_prototype>
+                            </trigger_prototypes>
+                        </item_prototype>
+                    </item_prototypes>
+                </discovery_rule>
+                <discovery_rule>
+                    <uuid>bac05cd6203c456f9040a26526ec2157</uuid>
+                    <name>PORTA 2 DCM</name>
+                    <type>TRAP</type>
+                    <key>PORTA_2</key>
+                    <delay>0</delay>
+                    <item_prototypes>
+                        <item_prototype>
+                            <uuid>cf7280f553fe4d5fae4b7aa962fbd1d9</uuid>
+                            <name>{#SID} - {#CANAL}</name>
+                            <type>TRAP</type>
+                            <key>P2_SID_[{#SID}]</key>
+                            <delay>0</delay>
+                            <tags>
+                                <tag>
+                                    <tag>PORTA</tag>
+                                    <value>2</value>
+                                </tag>
+                            </tags>
+                            <trigger_prototypes>
+                                <trigger_prototype>
+                                    <uuid>15c12a90b2e44e9fbecf6540261e499b</uuid>
+                                    <expression>avg(/LLD - DCM - PYTHON/P2_SID_[{#SID}],#3)=2</expression>
+                                    <name>{#CANAL} - {#SID} SEM SINAL</name>
+                                    <priority>DISASTER</priority>
+                                    <description>VERIFICAR CANAL {#SID} - {#CANAL} DA PORTA 2</description>
+                                </trigger_prototype>
+                            </trigger_prototypes>
+                        </item_prototype>
+                    </item_prototypes>
+                </discovery_rule>
+                <discovery_rule>
+                    <uuid>2d1785b7a6454c71a035a709c7d0be34</uuid>
+                    <name>PORTA 3 DCM</name>
+                    <type>TRAP</type>
+                    <key>PORTA_3</key>
+                    <delay>0</delay>
+                    <item_prototypes>
+                        <item_prototype>
+                            <uuid>8f33788462dd451b9f09f5c8a860d992</uuid>
+                            <name>{#SID} - {#CANAL}</name>
+                            <type>TRAP</type>
+                            <key>P3_SID_[{#SID}]</key>
+                            <delay>0</delay>
+                            <tags>
+                                <tag>
+                                    <tag>PORTA</tag>
+                                    <value>3</value>
+                                </tag>
+                            </tags>
+                            <trigger_prototypes>
+                                <trigger_prototype>
+                                    <uuid>da7fd8dd3c4b4156b5e938c03cd92492</uuid>
+                                    <expression>avg(/LLD - DCM - PYTHON/P3_SID_[{#SID}],#3)=2</expression>
+                                    <name>{#CANAL} - {#SID} SEM SINAL</name>
+                                    <priority>DISASTER</priority>
+                                </trigger_prototype>
+                            </trigger_prototypes>
+                        </item_prototype>
+                    </item_prototypes>
+                </discovery_rule>
+                <discovery_rule>
+                    <uuid>9f1a6beb5153460bb6a22df7845ee10d</uuid>
+                    <name>PORTA 4 DCM</name>
+                    <type>TRAP</type>
+                    <key>PORTA_4</key>
+                    <delay>0</delay>
+                    <item_prototypes>
+                        <item_prototype>
+                            <uuid>88fed85a543744a0977ae402ef05241e</uuid>
+                            <name>{#SID} - {#CANAL}</name>
+                            <type>TRAP</type>
+                            <key>P4_SID_[{#SID}]</key>
+                            <delay>0</delay>
+                            <tags>
+                                <tag>
+                                    <tag>PORTA</tag>
+                                    <value>4</value>
+                                </tag>
+                            </tags>
+                            <trigger_prototypes>
+                                <trigger_prototype>
+                                    <uuid>934de22224ce47af8d17edd1ab7e23c3</uuid>
+                                    <expression>avg(/LLD - DCM - PYTHON/P4_SID_[{#SID}],#3)=2</expression>
+                                    <name>{#CANAL} - {#SID} SEM SINAL</name>
+                                    <priority>DISASTER</priority>
+                                    <description>VERIFICAR CANAL {#SID} - {#CANAL} DA PORTA 4</description>
+                                </trigger_prototype>
+                            </trigger_prototypes>
+                        </item_prototype>
+                    </item_prototypes>
+                </discovery_rule>
+                <discovery_rule>
+                    <uuid>1e73354827404afdaba69dabd0c2b5f8</uuid>
+                    <name>PORTA 7 DCM</name>
+                    <type>TRAP</type>
+                    <key>PORTA_7</key>
+                    <delay>0</delay>
+                    <item_prototypes>
+                        <item_prototype>
+                            <uuid>703310a693564d36aad6ad69007eb7ba</uuid>
+                            <name>{#SID} - {#CANAL}</name>
+                            <type>TRAP</type>
+                            <key>P7_SID_[{#SID}]</key>
+                            <delay>0</delay>
+                            <tags>
+                                <tag>
+                                    <tag>PORTA</tag>
+                                    <value>7</value>
+                                </tag>
+                            </tags>
+                            <trigger_prototypes>
+                                <trigger_prototype>
+                                    <uuid>e708fa39ee0c440e9ae5d564ae55dfa7</uuid>
+                                    <expression>avg(/LLD - DCM - PYTHON/P7_SID_[{#SID}],#3)=2</expression>
+                                    <name>{#CANAL} - {#SID} SEM SINAL</name>
+                                    <priority>DISASTER</priority>
+                                    <description>VERIFICAR CANAL {#SID} - {#CANAL} DA PORTA 7</description>
+                                </trigger_prototype>
+                            </trigger_prototypes>
+                        </item_prototype>
+                    </item_prototypes>
+                </discovery_rule>
+            </discovery_rules>
+        </template>
+    </templates>
+</zabbix_export>
