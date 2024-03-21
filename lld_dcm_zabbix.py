@@ -5,7 +5,7 @@
 #                       CRIADO POR MAURICIO MENDES SOARES                           #
 #             QUALQUER DUVIDA - 13 991378882 - MAURICIO.SOARES@CLARO.COM.BR         #
 #                                                                                   #
-#NãoO RETIRE OS CRéDITOS POR GENTILEZA                                              #
+#                    Não RETIRE OS CRéDITOS POR GENTILEZA                           #
 #####################################################################################
 
 
