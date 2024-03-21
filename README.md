@@ -9,6 +9,6 @@ No arquivo de configuração do zabbix_server deixe ativado o ***StartTrappers**
 
 ## Como usar:
 
-- coloque os dois scripts em qualquer lugar do  servidor que desejar e utilize o script **lld_dcm_zabbix.py** para configurar o DCM
+- coloque os dois scripts em qualquer lugar do  servidor que desejar e utilize o script <quote>**lld_dcm_zabbix.py**</quote> para configurar o DCM
 - 
 
