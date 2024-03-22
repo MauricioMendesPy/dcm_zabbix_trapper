@@ -1,6 +1,6 @@
 ## Regra de descoberta DCM D9902
 
-#Requisitos:
+# Requisitos:
 
  /etc/zabbix/zabbix_server.conf
   
