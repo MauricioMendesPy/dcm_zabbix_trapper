@@ -1,7 +1,7 @@
 ## Regra de descoberta DCM D9902
 
-Requisitos:
-#
+#Requisitos:
+
  /etc/zabbix/zabbix_server.conf
   
 No arquivo de configuração do zabbix_server deixe ativado o ***StartTrappers*** e configure quantas intancias julgue necessário.
