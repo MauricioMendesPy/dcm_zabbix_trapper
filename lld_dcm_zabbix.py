@@ -1,11 +1,11 @@
 #####################################################################################
-#----------------SCRIPT DE DESCOBERTA DE PORTAS DO DCM CISCO D9902------------------#
+#----------------SCRIPT DE DESCOBERTA DE PORTAS DCM D9902---------------------------#
 #-------------------------- INPUT DE CANAIS-----------------------------------------#
 #                                                                                   #
 #                       CRIADO POR MAURICIO MENDES SOARES                           #
 #             QUALQUER DUVIDA - 13 991378882 - MAURICIO.SOARES@CLARO.COM.BR         #
 #                                                                                   #
-#                    Não RETIRE OS CRéDITOS POR GENTILEZA                           #
+#                    NÃO RETIRE OS CRÉDITOS POR GENTILEZA                           #
 #####################################################################################
 
 
@@ -129,8 +129,9 @@ def criar_lld(ip, porta_dcm, host, chave,ip_zabbix):
                     "{#OID}": valor["{#OID}"]
                 })
 
-    # Convertendo para formato JSON válido
+    # Convertendo para formato JSON
     json_dcm = json.dumps(dados_json).replace("'", "//'")
+    # corrige a formatação de aspas no json
     json_dcm_quote = shlex.quote(json_dcm)
 
     # Envia as informações do DCM para o Zabbix
@@ -152,7 +153,7 @@ def descobrir_dcm(ip, host_dcm,ip_zabbix):
     for porta in dcm_ports:
         criar_lld(ip, porta, host_dcm, f"PORTA_{porta}",ip_zabbix)
 
-#Função para enviar os valores para o Zabbix
+#Função principal para enviar os valores para o Zabbix
 def enviar_valores_zabbix(ip,host_dcm,ip_zabbix):
     dcm_ports = encontrar_portas(ip)
 
